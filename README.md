@@ -6,7 +6,7 @@
 ### App
 * Install dependencies: `npm install`
 * Bundle project's assets: `npm run build`
-* Starting app: `npm run start`
+* Starting app: `npm run start` [deprecated in favor of npm-run-all module]
 
 ### Tired of starting API & development server in different windows? 
 * Run the following task and voilà!: `npm run start`
