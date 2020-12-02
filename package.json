@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack serve --env development --mode development"
+    "json:server": "npx json-server --watch initialState.json",
+    "dev:server": "webpack serve --env development --mode development",
+    "start": "npm-run-all -p json:server dev:server"
   },
-  "keywords": [],
+  "keywords": ["react", "redux", "js"],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "npm-run-all": "^4.1.5",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
