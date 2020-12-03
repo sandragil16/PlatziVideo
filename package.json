@@ -10,7 +10,11 @@
     "dev:server": "webpack serve --env development --mode development",
     "start": "npm-run-all -p json:server dev:server"
   },
-  "keywords": ["react", "redux", "js"],
+  "keywords": [
+    "react",
+    "redux",
+    "js"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
