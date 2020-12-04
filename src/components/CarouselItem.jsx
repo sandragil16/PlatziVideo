@@ -31,12 +31,12 @@ const CarouselItem = (props) => {
             className='carousel-item__details--img'
             src={playIcon}
             alt='Play Icon'
-            onClick={handleSetFavorite}
           />
           <img
             className='carousel-item__details--img'
             src={plusIcon}
             alt='Plus Icon'
+            onClick={handleSetFavorite}
           />
           <img
             className='carousel-item__details--img'

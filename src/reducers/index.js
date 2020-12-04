@@ -1,11 +1,13 @@
+import { actions } from '../actions';
+
 const reducer = (state, action) => {
-  switch (DeviceAcceleration.type) {
-    case 'SET_FAVORITE':
+  switch (action.type) {
+    case actions.setFavorite:
       return {
         ...state,
         myList: [...state.myList, action.payload],
       };
-    case 'DELETE_FAVORITE':
+    case actions.deleteFavorite:
       return {
         ...state,
         myList: state.myList.filter((items) => items.id !== action.payload),
