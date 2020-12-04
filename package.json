@@ -15,7 +15,7 @@
     "redux",
     "js"
   ],
-  "author": "",
+  "author": "Cubiquin",
   "license": "ISC",
   "dependencies": {
     "npm-run-all": "^4.1.5",
