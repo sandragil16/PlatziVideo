@@ -10,13 +10,14 @@ const Login = (props) => {
   const [form, setValues] = useState({
     email: '',
   });
-  const handleInput = (event) => {
+  const handleInput = (e) => {
     setValues({
-      [event.target.name]: event.target.value,
+      ...form,
+      [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     props.loginRequest(form);
     props.history.push('/');
   };
@@ -30,6 +31,7 @@ const Login = (props) => {
             name='email'
             className='input'
             type='text'
+            autoComplete='username'
             placeholder='Correo'
             onChange={handleInput}
           />
@@ -38,6 +40,7 @@ const Login = (props) => {
             className='input'
             type='password'
             placeholder='Contraseña'
+            autoComplete='current-password'
             onChange={handleInput}
           />
           <button type='submit' className='button'>
@@ -80,4 +83,4 @@ const mapDispatchToProps = {
   loginRequest,
 };
 
-export default connect(null, mapDispatchToProps, null)(Login);
+export default connect(null, mapDispatchToProps)(Login);
