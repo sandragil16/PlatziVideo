@@ -18,7 +18,13 @@ const reducer = (state, action) => {
         user: action.payload,
       };
 
-    case action.logoutRequest:
+    case actions.logoutRequest:
+      return {
+        ...state,
+        user: action.payload,
+      };
+
+    case actions.registerRequest:
       return {
         ...state,
         user: action.payload,
