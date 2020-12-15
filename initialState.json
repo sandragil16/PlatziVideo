@@ -1,5 +1,6 @@
 {
-  "initialState": {
+    "user": {},
+    "playing": {},
     "myList": [],
     "trends": [
       {
@@ -11,9 +12,9 @@
         "year": 2009,
         "contentRating": "16+",
         "duration": 164,
-        "cover": "http://dummyimage.com/800x600.png/99118E/ffffff",
+        "cover": "https://www.thehide.com/wp-content/uploads/2017/11/The-Hide-Elephant-Sunset.jpg",
         "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+        "source": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
       },
       {
         "id": 3,
@@ -24,9 +25,9 @@
         "year": 2002,
         "contentRating": "16+",
         "duration": 137,
-        "cover": "http://dummyimage.com/800x600.png/302140/ffffff",
+        "cover": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
         "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+        "source": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       },
       {
         "id": 4,
@@ -37,9 +38,9 @@
         "year": 2014,
         "contentRating": "16+",
         "duration": 163,
-        "cover": "http://dummyimage.com/800x600.png/5472FF/ffffff",
+        "cover": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
         "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+        "source": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
       },
       {
         "id": 5,
@@ -161,5 +162,4 @@
         "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
       }
     ]
-  }
 }
