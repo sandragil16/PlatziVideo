@@ -61,5 +61,5 @@ const Register = (props) => {
 const mapDispatchToProps = {
   registerRequest,
 };
-export default connect(null,  mapDispatchToProps)(Register);
+export default connect(null, mapDispatchToProps)(Register);
 
