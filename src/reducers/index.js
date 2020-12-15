@@ -30,13 +30,13 @@ const reducer = (state, action) => {
         user: action.payload,
       };
 
-    case actions.getVideoSourceRequest:
+    case actions.getVideoSource:
       return {
         ...state,
         playing:
-          state.trends.find((item) => item.id === Number(action.playload)) ||
-          state.original.find((item) => item.id === Number(action.playload)) ||
-          [],
+          [...state.trends, ...state.originals].find(
+            (item) => item.id === Number(action.payload),
+          ) || [],
       };
 
     default:

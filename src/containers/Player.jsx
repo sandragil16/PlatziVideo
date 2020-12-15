@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { getVideoSource } from '../actions';
-import NotFound from './NotFound';
 import '../assets/styles/components/Player.scss';
+import NotFound from './NotFound';
 
 const Player = (props) => {
   const {
@@ -16,15 +17,12 @@ const Player = (props) => {
 
   useEffect(() => {
     props.getVideoSource(id);
-    setLoading(false);
   }, []);
-
-  if (loading) return <h2>Cargando Video...</h2>;
 
   return hasPlaying ? (
     <div className='Player'>
       <video controls autoPlay>
-        <source scr={playing.source} type='video/mp4' />
+        <source src={playing.source} type='video/mp4' />
       </video>
       <div className='Player-back'>
         <button type='button' onClick={() => history.goBack()}>
@@ -41,6 +39,10 @@ const mapStateToProps = (state) => {
   return {
     playing: state.playing,
   };
+};
+
+Player.propTypes = {
+  getVideoSource: PropTypes.func,
 };
 
 const mapDispatchToProps = {
