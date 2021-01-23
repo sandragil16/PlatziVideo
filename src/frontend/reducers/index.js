@@ -1,4 +1,3 @@
-import { actions } from '../actions';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -37,6 +36,15 @@ const reducer = (state, action) => {
           [...state.trends, ...state.originals].find(
             (item) => item.id === Number(action.payload),
           ) || [],
+      };
+
+    case actions.getVideoSearch:
+      return {
+        ...state,
+        searchResult: [],
+        list: [...state.trends, ...state.originals].filter((item) =>
+          item.title.toLowerCase().includes(action.payload.toLowerCase()),
+        ),
       };
 
     default:
